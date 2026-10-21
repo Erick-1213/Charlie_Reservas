@@ -1,9 +1,17 @@
 # Registro XP - Equipo ___
 Repositorio: https://github.com/_________________
 Integrantes y usuarios GitHub:
+
+
 Erik Guerrero - erigue08
+
+
 Heidy Tenelema - Musui123
+
+
 Erick Cuichan - Erick-1213
+
+
 Dayana Martinez - Dalinel05
 
 ## Cliente y objetivo de valor
