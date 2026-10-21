@@ -11,8 +11,46 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.CsvSource;
 
 class BookingPolicyTest {
+    @ParameterizedTest
+    @CsvSource({"A, B", "A, C", "B, A", "B, C", "C, A", "C, B"})
+    void studentCannotHaveTwoActiveBookings(String firstSlot, String secondSlot) {
+        Map<String, String> ownerBySlot = new HashMap<>();
+        BookingPolicy policy = new BookingPolicy();
+        assertTrue(policy.book(ownerBySlot, "E01", firstSlot));
+
+        boolean secondBooking = policy.book(ownerBySlot, "E01", secondSlot);
+
+        assertAll(
+                () -> assertFalse(secondBooking),
+                () -> assertEquals(Map.of(firstSlot, "E01"), ownerBySlot)
+        );
+    }
+
+    @Test
+    void differentStudentCanBookAnotherFreeSlot() {
+        Map<String, String> ownerBySlot = new HashMap<>();
+        BookingPolicy policy = new BookingPolicy();
+        assertTrue(policy.book(ownerBySlot, "E01", "A"));
+
+        assertTrue(policy.book(ownerBySlot, "E02", "B"));
+        assertEquals(Map.of("A", "E01", "B", "E02"), ownerBySlot);
+    }
+
+    @Test
+    void studentCanBookAgainOncePreviousBookingIsRemoved() {
+        Map<String, String> ownerBySlot = new HashMap<>();
+        BookingPolicy policy = new BookingPolicy();
+        assertTrue(policy.book(ownerBySlot, "E01", "A"));
+        // Estado posterior a una cancelacion correcta; HU-02 se prueba por separado.
+        ownerBySlot.remove("A");
+
+        assertTrue(policy.book(ownerBySlot, "E01", "B"));
+        assertEquals(Map.of("B", "E01"), ownerBySlot);
+    }
+
     @Test
     void validBookingReturnsTrueAndMakesSlotUnavailable() {
         Reservations reservations = new Reservations();
