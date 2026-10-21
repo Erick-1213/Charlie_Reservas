@@ -1,9 +1,21 @@
 package edu.epn.iccd632.xp;
 
-/**
- * HU-02: prueben primero CancellationPolicy directamente con un Map
- * precargado; así no dependen de que HU-01 ya esté terminada.
- */
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.HashMap;
+import java.util.Map;
+import org.junit.jupiter.api.Test;
+
+/** HU-02: cancelación de una reserva por su titular. */
 class CancellationPolicyTest {
-    // TODO HU-02: importar JUnit, preparar mapa con "A"->"E01" y probar.
+    @Test
+    void cancelsReservedSlotWhenRequestedByItsOwner() {
+        CancellationPolicy policy = new CancellationPolicy();
+        Map<String, String> ownerBySlot = new HashMap<>();
+        ownerBySlot.put("A", "E01");
+
+        assertTrue(policy.cancel(ownerBySlot, "E01", "A"));
+        assertFalse(ownerBySlot.containsKey("A"));
+    }
 }
