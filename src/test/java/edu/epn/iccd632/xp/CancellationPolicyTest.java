@@ -26,7 +26,7 @@ class CancellationPolicyTest {
         ownerBySlot.put("A", "E01");
 
         assertTrue(policy.cancel(ownerBySlot, "E01", "A"));
-        assertTrue(policy.cancel(ownerBySlot, "E02", "A"));
+        assertFalse(policy.cancel(ownerBySlot, "E02", "A"));
         assertTrue(ownerBySlot.isEmpty());
     }
 }
