@@ -23,9 +23,22 @@ Automatizacion de registro y cancelacion de una reserva de sala de estudio para 
 Registre dos decisiones reales del equipo que reflejen comunicación, simplicidad, retroalimentación, coraje o respeto.
 
 ## Responsabilidades flexibles
-Pareja 1 (HU-01): ___ / ___ | Pareja 2 (HU-02): ___ / ___
+Pareja 1 (HU-01): Erick Cuichan / Dayana Martínez | 
+
+Pareja 2 (HU-02): Erik Guerrero / Heidy Tenelema
 Facilitación: ___ | Seguimiento: ___ | Consulta al cliente: ___
-Las responsabilidades pueden cambiar durante el examen.
+
+
+#### Programación en Parejas (XP)
+
+| Turno| Duración | Driver | Navigator |
+|------|----------|--------|-----------|
+| 1 | 10 min | Heidy | Erik |
+| 1 | 10 min | Dayana | Erick |
+| 2 | 10 min | Erik | Heidy |
+| 2 | 10 min | Erick | Dayana |
+| 3 | 10 min | Heidy | Erik |
+| 3 | 10 min | Dayana | Erick |
 
 ## Historias, aceptación y estimaciones
 | Historia | Prioridad | Estimación relativa | Criterios de aceptación | Tareas |
