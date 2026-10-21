@@ -50,6 +50,8 @@ Facilitación: Erick Cuichan | Seguimiento: Erik Guerrero | Consulta al cliente:
 | 4 | 10 min | Heidy | Erik |
 | 5 | 10 min | Erik | Heidy |
 | 5 | 10 min | Erick | Dayana |
+| 6 | 10 min | Dayana | Erick |
+| 6 | 10 min | Heidy | Erik |
 
 ## Historias, aceptación y estimaciones
 | Historia | Prioridad | Estimación relativa | Criterios de aceptación | Tareas |
@@ -58,10 +60,14 @@ Facilitación: Erick Cuichan | Seguimiento: Erik Guerrero | Consulta al cliente:
 | HU-02 | Alta | 23|Permitir cancelar al titular, rechazar a terceros y liberar el bloque. | cancelación y verificar resultados.|
 
 ## Tablero mínimo
-| Por hacer | En curso | Terminado |
 
+
+| Por hacer | En curso | Terminado |
 |---|---|---|
-| | | |
+| Completar la HU-02 | Implementación de HU-02: Cancelar reserva | HU-01: Registrar reserva |
+| Revisar los Pull Requests | Pruebas de HU-02 | Asignación de historias de usuario |
+| Ejecutar pruebas integradas | | Estimaciones mediante Planning Poker |
+
 
 ## Prácticas técnicas
 Evidencia RED (prueba inicial que falla, momento o commit):
