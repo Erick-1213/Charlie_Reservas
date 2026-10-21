@@ -71,9 +71,6 @@ Facilitación: Erick Cuichan | Seguimiento: Erik Guerrero | Consulta al cliente:
 | Ejecutar pruebas integradas | | Estimaciones mediante Planning Poker |
 
 
-
-## Prácticas técnicas
-
 ## Prácticas técnicas
 
 **Evidencia RED (prueba inicial que falla, momento o commit):**  
@@ -92,9 +89,23 @@ PR HU-02: ... | Revisor distinto del autor: ...
 Resultado Actions (éxito/fallo/no disponible): ... | URL de ejecución: ...
 
 ## Cambio del cliente (completar SOLO cuando se anuncie)
-ID: ... | Nueva regla: ...
-Impacto en pruebas/código: ... | Prioridad revisada: ...
-Decisión del equipo y estado final: ...
+
+**ID:** CR-01
+
+**Nueva regla:** Un estudiante no podrá mantener más de una reserva activa entre los bloques A, B y C.
+
+**Impacto en pruebas/código:** Se deben incorporar pruebas unitarias para rechazar una segunda reserva activa del mismo estudiante, permitir reservas de estudiantes diferentes y comprobar que una cancelación válida habilita una nueva reserva. Se modifica la lógica de BookingPolicy.java sin alterar las reglas existentes.
+
+**Prioridad revisada:** Alta.
+
+**Efecto sobre el alcance:** Se incorpora la restricción de una reserva activa por estudiante al registro de reservas, conservando los requisitos originales de HU-01 y HU-02.
+
+**Decisión del equipo y estado final:** Pendiente de implementación y verificación.
+
 
 ## Cierre
-Historias aceptadas, pendientes conocidos y siguiente mejora concreta (máx. 3 líneas):
+**Historias aceptadas:** HU-01 (registro de reservas), HU-02 (cancelación de reservas) y HU-03 (CR-01: límite de una reserva activa por estudiante).
+
+**Pendientes conocidos:** Ninguno a nivel funcional, tras completar la implementación y verificar los criterios de aceptación.
+
+**Siguiente mejora concreta:** Ampliar las pruebas unitarias para contemplar más casos límite y garantizar el correcto funcionamiento del sistema.
