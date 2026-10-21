@@ -52,6 +52,8 @@ Facilitación: Erick Cuichan | Seguimiento: Erik Guerrero | Consulta al cliente:
 | 5 | 10 min | Erick | Dayana |
 | 6 | 10 min | Dayana | Erick |
 | 6 | 10 min | Heidy | Erik |
+| 7 | 10 min | Erik | Heidy |
+| 7 | 10 min | Erick | Dayana |
 
 ## Historias, aceptación y estimaciones
 | Historia | Prioridad | Estimación relativa | Criterios de aceptación | Tareas |
@@ -69,10 +71,20 @@ Facilitación: Erick Cuichan | Seguimiento: Erik Guerrero | Consulta al cliente:
 | Ejecutar pruebas integradas | | Estimaciones mediante Planning Poker |
 
 
+
 ## Prácticas técnicas
-Evidencia RED (prueba inicial que falla, momento o commit):
-Evidencia GREEN (prueba que pasa después, momento o commit):
-Refactorización o decisión de simplicidad:
+
+## Prácticas técnicas
+
+**Evidencia RED (prueba inicial que falla, momento o commit):**  
+`BookingPolicyTest.rechazaSegundaReservaDelMismoEstudiante` — La prueba falló porque el sistema permitía que un mismo estudiante registrara más de una reserva activa.
+
+**Evidencia GREEN (prueba que pasa después, momento o commit):**  
+`BookingPolicyTest.rechazaSegundaReservaDelMismoEstudiante` — Después de implementar la validación de una única reserva activa por estudiante, se ejecutó nuevamente la prueba y pasó satisfactoriamente.
+
+**Refactorización o decisión de simplicidad:**  
+Se mantuvo la estructura existente del proyecto, implementando la nueva validación sobre las reservas almacenadas en memoria, sin incorporar clases o dependencias adicionales.
+
 
 ## Git / revisión / CI
 PR HU-01: ... | Revisor distinto del autor: ...
