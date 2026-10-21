@@ -54,8 +54,8 @@ Facilitación: Erick Cuichan | Seguimiento: Erik Guerrero | Consulta al cliente:
 ## Historias, aceptación y estimaciones
 | Historia | Prioridad | Estimación relativa | Criterios de aceptación | Tareas |
 |---|---|---|---|---|
-| HU-01 | Alta | 25| | |
-| HU-02 | Alta | 23| | |
+| HU-01 | Alta | 25| Registrar un bloque libre; rechazar duplicados y datos inválidos.| Crear pruebas, implementar registro y verificar resultados.|
+| HU-02 | Alta | 23|Permitir cancelar al titular, rechazar a terceros y liberar el bloque. | cancelación y verificar resultados.|
 
 ## Tablero mínimo
 | Por hacer | En curso | Terminado |
