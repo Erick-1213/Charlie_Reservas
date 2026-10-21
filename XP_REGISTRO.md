@@ -1,5 +1,6 @@
 # Registro XP - Equipo ___
-Repositorio: https://github.com/_________________
+Repositorio: (https://github.com/Erick-1213/Charlie_Reservas)
+
 Integrantes y usuarios GitHub:
 
 
@@ -22,11 +23,17 @@ Automatizacion de registro y cancelacion de una reserva de sala de estudio para 
 ## Valores XP observables
 Registre dos decisiones reales del equipo que reflejen comunicación, simplicidad, retroalimentación, coraje o respeto.
 
+Comunicación: Trabajamos en parejas utilizando los roles de Driver (conductor) y Navigator (navegador), intercambiando ideas y propuestas durante la implementación de las historias de usuario.
+
+Respeto: Distribuimos las historias de usuario entre las parejas y establecimos una rotación de roles cada 10 minutos para garantizar la participación de ambos integrantes. Además, utilizamos un temporizador para controlar el tiempo dedicado a cada rol.
+
+
 ## Responsabilidades flexibles
 Pareja 1 (HU-01): Erick Cuichan / Dayana Martínez | 
 
 Pareja 2 (HU-02): Erik Guerrero / Heidy Tenelema
-Facilitación: ___ | Seguimiento: ___ | Consulta al cliente: ___
+
+Facilitación: Erick Cuichan | Seguimiento: Erik Guerrero | Consulta al cliente: Heidy Tenelema 
 
 
 #### Programación en Parejas (XP)
@@ -39,15 +46,20 @@ Facilitación: ___ | Seguimiento: ___ | Consulta al cliente: ___
 | 2 | 10 min | Erick | Dayana |
 | 3 | 10 min | Heidy | Erik |
 | 3 | 10 min | Dayana | Erick |
+| 4 | 10 min | Dayana | Erick |
+| 4 | 10 min | Heidy | Erik |
+| 5 | 10 min | Erik | Heidy |
+| 5 | 10 min | Erick | Dayana |
 
 ## Historias, aceptación y estimaciones
 | Historia | Prioridad | Estimación relativa | Criterios de aceptación | Tareas |
 |---|---|---|---|---|
-| HU-01 | Alta | | | |
-| HU-02 | Alta | | | |
+| HU-01 | Alta | 25| | |
+| HU-02 | Alta | 23| | |
 
 ## Tablero mínimo
 | Por hacer | En curso | Terminado |
+
 |---|---|---|
 | | | |
 
